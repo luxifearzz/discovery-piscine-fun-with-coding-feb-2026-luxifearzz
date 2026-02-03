@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cellule3.2</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form id="calcForm" class="flex-col">
+            <input
+                type="number"
+                class="value-textbox"
+                id="left-value"
+                step="any"
+                required
+            />
+
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <input
+                type="number"
+                class="value-textbox"
+                id="right-value"
+                step="any"
+                required
+            />
+
+            <button type="submit" class="btn">Try me!</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
